@@ -1,0 +1,416 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Genopets</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<style>
+  
+    body{
+       /* background-color: rgb(13, 17, 23);*/
+       background-image: url('images/planets.jpg');
+
+       background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+       
+    } 
+
+    
+    .banner{
+        height:200px;
+        background-image: url('images/banner.jpg');
+        background-repeat: no-repeat;
+  
+   background-size: 100% 100%;
+   box-shadow: 3px 3px 3px cadetblue;
+    }
+
+    .calculator{
+        border-radius: 17px;
+        box-shadow: 3px 3px 3px aliceblue;
+        background:rgba(250,250,250,.2);
+        position:relative;
+    }
+  
+
+
+
+
+
+    @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+    
+    .fontstyle {
+      color: hsla(0, 0%, 0%, .9);
+      font: normal 1.6em Varela Round, sans-serif;
+      height: 1.6em;
+      left: 0;
+      letter-spacing: 5px;
+      margin: 0 0 0 0;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      top: 1;
+      width: 100%;
+      animation: move linear 2000ms infinite;  
+    }
+    
+    @keyframes move {
+      0% {
+        text-shadow:
+          4px -4px 0 hsla(0, 100%, 50%, 1), 
+          3px -3px 0 hsla(0, 100%, 50%, 1), 
+          2px -2px 0 hsla(0, 100%, 50%, 1), 
+          1px -1px 0 hsla(0, 100%, 50%, 1),
+          -4px 4px 0 hsla(180, 100%, 50%, 1), 
+          -3px 3px 0 hsla(180, 100%, 50%, 1), 
+          -2px 2px 0 hsla(180, 100%, 50%, 1), 
+          -1px 1px 0 hsla(180, 100%, 50%, 1)
+        ;
+      }
+      25% {    
+        text-shadow:      
+          -4px -4px 0 hsla(180, 100%, 50%, 1), 
+          -3px -3px 0 hsla(180, 100%, 50%, 1), 
+          -2px -2px 0 hsla(180, 100%, 50%, 1), 
+          -1px -1px 0 hsla(180, 100%, 50%, 1),
+          4px 4px 0 hsla(0, 100%, 50%, 1), 
+          3px 3px 0 hsla(0, 100%, 50%, 1), 
+          2px 2px 0 hsla(0, 100%, 50%, 1), 
+          1px 1px 0 hsla(0, 100%, 50%, 1)      
+        ;
+      }
+      50% {
+        text-shadow:
+          -4px 4px 0 hsla(0, 100%, 50%, 1), 
+          -3px 3px 0 hsla(0, 100%, 50%, 1), 
+          -2px 2px 0 hsla(0, 100%, 50%, 1), 
+          -1px 1px 0 hsla(0, 100%, 50%, 1),
+          4px -4px 0 hsla(180, 100%, 50%, 1), 
+          3px -3px 0 hsla(180, 100%, 50%, 1), 
+          2px -2px 0 hsla(180, 100%, 50%, 1), 
+          1px -1px 0 hsla(180, 100%, 50%, 1)
+        ;
+      }
+      75% {
+        text-shadow:
+          4px 4px 0 hsla(180, 100%, 50%, 1), 
+          3px 3px 0 hsla(180, 100%, 50%, 1), 
+          2px 2px 0 hsla(180, 100%, 50%, 1), 
+          1px 1px 0 hsla(180, 100%, 50%, 1),
+          -4px -4px 0 hsla(0, 100%, 50%, 1), 
+          -3px -3px 0 hsla(0, 100%, 50%, 1), 
+          -2px -2px 0 hsla(0, 100%, 50%, 1), 
+          -1px -1px 0 hsla(0, 100%, 50%, 1)      
+        ;
+      }
+      100% {
+        text-shadow:
+          4px -4px 0 hsla(0, 100%, 50%, 1), 
+          3px -3px 0 hsla(0, 100%, 50%, 1), 
+          2px -2px 0 hsla(0, 100%, 50%, 1), 
+          1px -1px 0 hsla(0, 100%, 50%, 1),
+          -4px 4px 0 hsla(180, 100%, 50%, 1), 
+          -3px 3px 0 hsla(180, 100%, 50%, 1), 
+          -2px 2px 0 hsla(180, 100%, 50%, 1), 
+          -1px 1px 0 hsla(180, 100%, 50%, 1)
+        ;
+      }  
+    }
+    
+    
+
+
+
+    .Calculatebtn {
+        position: relative;
+        top: 10px;
+        left: 0%;
+      
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+        background-size: 400%;
+        border-radius: 30px;
+        z-index: 1;
+      }
+      .Calculatebtn:hover {
+        animation: animate 8s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 400%;
+        }
+      }
+      .Calculatebtn:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+        background-size: 400%;
+        border-radius: 40px;
+        opacity: 0;
+        transition: 0.5%;
+      }
+      .Calculatebtn:hover:before {
+        filter: blur(20px);
+        opacity: 1;
+        animation: animate 8s linear infinite;
+      }
+      
+
+      .footer{
+        background-color:rgba(0,0,0,.4)
+      }
+
+      .css-o8h0bd,.css-a555fd {
+        width:14%;
+        padding:10px;
+        display:inline-block;
+      }
+
+   /*  calculator {
+        width: 200px;
+        height: 200px;
+        display: block;
+        position: relative;
+      }
+      
+      calculator::after {
+        content: "";
+        background-image: url("images/background.jpeg");
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+      https://api.solscan.io/account/tokens?address=AeG1Be3Y81pyGmNCjPG6bCjFZa4dt4B7HpQViByAF29n&price=1&cluster=
+https://fcftmhwnoluid7o2zwydgiv2psvcltebb4fxa337zutx562xyqoq.arweave.net/KIs2Hs1y6IH92s2wMyK6fKolzIEPC3Bvf80nfvtXxB0
+*/
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+    <div class="row banner" style="background-color:black;">
+        <div class="col-sm-6 ">
+            <img src="images/GOE.png" style="width:23%;margin-left:2%;"/>
+        </div>
+        <div class="col-sm-6 mt-2 "style="text-align:right; font-size:1em;">
+            <span class="badge bg-primary">
+                Sol Price: $ <span id="solPrice" style="font-weight:bold">0.00</span> 
+            </span>
+
+            <span class="badge bg-primary">
+                KI Price: $ <span id="kiPrice" style="font-weight:bold">0.00</span> 
+            </span>
+
+            <span class="badge bg-primary">
+                GENE Price: $ <span id="genePrice" style="font-weight:bold">0.00</span> 
+            </span>
+          
+        </div>
+    </div>
+
+   
+
+
+    <div class="container">
+
+    <form onsubmit="energyCalculator(event)">
+        <div class="row "   style="margin-top:1%;margin-bottom:10px;">
+
+
+            <div class="col-sm-1">
+
+               
+  
+              </div>
+
+            <div class="col-sm-4">
+
+              <img src="images/pet-rotate.gif" class="rounded " style="width:100%;"/>
+
+            </div>
+
+            <div class="col-sm-1">
+
+               
+  
+            </div>
+           
+            <div class="col-sm-6">
+
+                <div class="row border  py-3 ps-3 pe-3 calculator ">
+                    <h3 class="mb-5 fontstyle">Genopets Energy Calculator</h3>
+
+                    <div class="col mt-2">
+                      <label style="font-weight:bold;font-size:1.3em;color:white;text-shadow: 3px 3px 3px black;" class="mb-2">Enter Steps</label>
+                      <input type="number" id="steps" class="form-control" placeholder="Steps" required>
+                    </div>
+                    <div class="col mt-2">
+                      <label style="font-weight:bold;font-size:1.3em;color:white;text-shadow: 3px 3px 3px black;"  class="mb-2">Enter Level</label>
+                      <input type="number" id="level" class="form-control" placeholder="Level" required>
+                    </div>
+                    <button class=" my-3 Calculatebtn" >Calculate</button>
+          
+                  
+          
+          
+          
+                    <table class="table " style="display:none;color:white">
+                      <tr>
+                          <td></td>
+                          <td colspan="3" calss="border" style="text-align:center; font-weight:bold;font-size:1.2em">
+                              KI Token
+                          </td>
+                      </tr>
+          
+                      <tr >
+                          <th style="text-align:center; background: #13495a;;">Energy</th>
+                          <th style="text-align:center;background: #13495a;;">7 days</th>
+                          <th style="text-align:center;background: #13495a;;">10 days</th>
+                          <th style="text-align:center;background: #13495a;;">14 days</th>
+          
+                        
+                      </tr>
+          
+                      <tr>
+                          <td style="text-align:center;background: #096f8e;">
+                              <span id="totalenergy"></span>
+                          </td>
+                          <td style="text-align:center;background: #096f8e;">
+                              <span id="days7"></span>
+                          </td>
+                          <td style="text-align:center;background: #096f8e;">
+                              <span id="days10"></span>
+                          </td>
+                          <td style="text-align:center;background: #096f8e;">
+                              <span id="days14"></span>
+                          </td>
+          
+                        
+                      </tr>
+          
+          
+          
+          
+          
+          
+                    </table>
+                  
+                    
+
+                </div>
+
+                <div style="color:#bdfff1;" class="mt-5">
+
+                    Genopets is a Free-to-Play, Move-to-Earn NFT mobile game that makes it fun and rewarding to live an active lifestyle. A Genopet is your digital pet whose evolution and growth is inextricably linked to your own.
+                     The steps you take every day power your journey through the Genoverse as you explore, battle, and evolve — earning crypto while you play.
+                </div>
+
+               
+
+
+                <div class="genopetsSocils row mt-5">
+                <div class="col-sm-6">
+                    <div class="my-2 text-white" style="font-weight:bold;"> Genopets Social Media</div>
+                     <div class="css-10egq61"><div class="css-j0ozid"><div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://twitter.com/genopets" aria-label="Facebook"><svg viewBox="0 0 16 13" focusable="false" class="chakra-icon css-tsk1ht"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9384 1.46728C15.3522 1.71611 14.7216 1.88439 14.0601 1.96018C14.7355 1.57263 15.254 0.959592 15.4981 0.228815C14.8665 0.587291 14.1662 0.847568 13.4216 0.988194C12.8249 0.379928 11.9752 0 11.0348 0C9.22882 0 7.76498 1.40101 7.76498 3.12952C7.76498 3.37454 7.79387 3.61337 7.84965 3.84266C5.13166 3.71204 2.72248 2.46596 1.10971 0.572514C0.828298 1.03491 0.666922 1.57263 0.666922 2.14609C0.666922 3.23153 1.24419 4.1897 2.1213 4.75077C1.58537 4.73456 1.08132 4.59394 0.640524 4.3594C0.640026 4.37275 0.640026 4.38562 0.640026 4.39897C0.640026 5.91534 1.76717 7.18002 3.26338 7.46747C2.98895 7.53897 2.70006 7.57711 2.40172 7.57711C2.19103 7.57711 1.98632 7.55756 1.78659 7.52134C2.20249 8.76456 3.41032 9.66933 4.84128 9.6946C3.72211 10.5341 2.31206 11.0341 0.779985 11.0341C0.516005 11.0341 0.25601 11.0193 0 10.9907C1.44691 11.8784 3.16576 12.3965 5.01262 12.3965C11.0274 12.3965 14.3162 7.62764 14.3162 3.49229C14.3162 3.35643 14.3132 3.22152 14.3067 3.08709C14.9457 2.64615 15.5001 2.09509 15.9384 1.46728Z" fill="currentColor"></path></svg></a></div><div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://medium.com/@genopets" aria-label="Medium"><svg viewBox="0 0 18 18" focusable="false" class="chakra-icon css-tsk1ht"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.99269 5.33712C3.01237 5.14552 2.93822 4.95651 2.79384 4.82791L1.32384 3.07425V2.8125H5.89003L9.41934 10.4734L12.5221 2.8125H16.875V3.07425L15.6176 4.26739C15.5093 4.34923 15.4555 4.48367 15.4778 4.61682V13.3838C15.4555 13.5163 15.5093 13.6508 15.6176 13.7326L16.8455 14.9257V15.1875H10.6688V14.9257L11.9413 13.7034C12.066 13.58 12.066 13.5436 12.066 13.3546V6.26851L8.52947 15.1589H8.05172L3.93375 6.26851V12.2271C3.89962 12.4771 3.98362 12.7298 4.16147 12.9103L5.81588 14.8965V15.1589H1.125V14.8965L2.77941 12.9103C2.95659 12.7291 3.03534 12.4752 2.99269 12.2271V5.33712Z" fill="currentColor"></path></svg></a></div><div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://discord.gg/genopets" aria-label="Discord"><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-lvfkuc"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.289 5.81904C17.9093 5.19395 16.4527 4.7505 14.9565 4.5C14.7518 4.86219 14.5666 5.23482 14.4016 5.61636C12.8078 5.37871 11.1871 5.37871 9.59341 5.61636C9.42833 5.23486 9.24308 4.86223 9.03843 4.5C7.54129 4.75261 6.08378 5.19712 4.70267 5.82231C1.96081 9.83663 1.21754 13.7512 1.58918 17.6103C3.19488 18.7843 4.99211 19.6771 6.90276 20.25C7.33298 19.6774 7.71367 19.0699 8.04079 18.4341C7.41947 18.2044 6.81978 17.9211 6.24868 17.5874C6.39898 17.4795 6.54599 17.3684 6.68803 17.2605C10.0526 18.8263 13.9473 18.8263 17.3119 17.2605C17.4556 17.3766 17.6026 17.4877 17.7512 17.5874C17.179 17.9217 16.5783 18.2055 15.9558 18.4357C16.2826 19.0713 16.6633 19.6782 17.0939 20.25C19.0061 19.6794 20.8048 18.787 22.4107 17.6119C22.8468 13.1367 21.6658 9.25802 19.289 5.81904ZM8.51153 15.237C7.4759 15.237 6.62031 14.307 6.62031 13.1628C6.62031 12.0187 7.44617 11.0805 8.50823 11.0805C9.57028 11.0805 10.4193 12.0187 10.4011 13.1628C10.3829 14.307 9.56698 15.237 8.51153 15.237ZM13.5988 13.1628C13.5988 14.307 14.4511 15.237 15.4884 15.237C16.5438 15.237 17.3581 14.307 17.3763 13.1628C17.3945 12.0187 16.5521 11.0805 15.4884 11.0805C14.4247 11.0805 13.5988 12.0187 13.5988 13.1628Z" fill="currentColor"></path></svg></a></div><div class="css-a555fd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://www.instagram.com/genopets" aria-label="Instagram"><svg viewBox="0 0 14 14" focusable="false" class="chakra-icon css-tsk1ht"><path d="M4.13636 0C1.855 0 0 1.855 0 4.13636V9.86364C0 12.145 1.855 14 4.13636 14H9.86364C12.145 14 14 12.145 14 9.86364V4.13636C14 1.855 12.145 0 9.86364 0H4.13636ZM10.8182 2.54545C11.1682 2.54545 11.4545 2.83182 11.4545 3.18182C11.4545 3.53182 11.1682 3.81818 10.8182 3.81818C10.4682 3.81818 10.1818 3.53182 10.1818 3.18182C10.1818 2.83182 10.4682 2.54545 10.8182 2.54545ZM7 3.5C8.93136 3.5 10.5 5.06864 10.5 7C10.5 8.93136 8.93136 10.5 7 10.5C5.06864 10.5 3.5 8.93136 3.5 7C3.5 5.06864 5.06864 3.5 7 3.5ZM7 4.13636C5.42182 4.13636 4.13636 5.42182 4.13636 7C4.13636 8.57818 5.42182 9.86364 7 9.86364C8.57818 9.86364 9.86364 8.57818 9.86364 7C9.86364 5.42182 8.57818 4.13636 7 4.13636Z" fill="currentColor"></path></svg></a></div><div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://youtube.com/c/Genopets" aria-label="Youtube"><svg viewBox="0 0 18 18" focusable="false" class="chakra-icon css-lvfkuc"><path d="M16.1866 5.40023C16.014 4.75066 15.5058 4.23908 14.8604 4.06547C13.6906 3.75 9 3.75 9 3.75C9 3.75 4.30939 3.75 3.1396 4.06547C2.49423 4.23911 1.98595 4.75066 1.81344 5.40023C1.5 6.5776 1.5 9.03409 1.5 9.03409C1.5 9.03409 1.5 11.4906 1.81344 12.6679C1.98595 13.3175 2.49423 13.8078 3.1396 13.9814C4.30939 14.2969 9 14.2969 9 14.2969C9 14.2969 13.6906 14.2969 14.8604 13.9814C15.5058 13.8078 16.014 13.3175 16.1866 12.6679C16.5 11.4906 16.5 9.03409 16.5 9.03409C16.5 9.03409 16.5 6.5776 16.1866 5.40023ZM7.4659 11.2644V6.80378L11.3863 9.03414L7.4659 11.2644Z" fill="currentColor"></path></svg></a></div></div></div>
+
+                </div>
+
+
+                <div class="col-sm-6">
+                    <div class="my-2 text-white" style="font-weight:bold;"> GOE Social Media</div>
+                     <div class="css-10egq61"><div class="css-j0ozid"><div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://twitter.com/GOEsoterra" aria-label="Facebook"><svg viewBox="0 0 16 13" focusable="false" class="chakra-icon css-tsk1ht"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9384 1.46728C15.3522 1.71611 14.7216 1.88439 14.0601 1.96018C14.7355 1.57263 15.254 0.959592 15.4981 0.228815C14.8665 0.587291 14.1662 0.847568 13.4216 0.988194C12.8249 0.379928 11.9752 0 11.0348 0C9.22882 0 7.76498 1.40101 7.76498 3.12952C7.76498 3.37454 7.79387 3.61337 7.84965 3.84266C5.13166 3.71204 2.72248 2.46596 1.10971 0.572514C0.828298 1.03491 0.666922 1.57263 0.666922 2.14609C0.666922 3.23153 1.24419 4.1897 2.1213 4.75077C1.58537 4.73456 1.08132 4.59394 0.640524 4.3594C0.640026 4.37275 0.640026 4.38562 0.640026 4.39897C0.640026 5.91534 1.76717 7.18002 3.26338 7.46747C2.98895 7.53897 2.70006 7.57711 2.40172 7.57711C2.19103 7.57711 1.98632 7.55756 1.78659 7.52134C2.20249 8.76456 3.41032 9.66933 4.84128 9.6946C3.72211 10.5341 2.31206 11.0341 0.779985 11.0341C0.516005 11.0341 0.25601 11.0193 0 10.9907C1.44691 11.8784 3.16576 12.3965 5.01262 12.3965C11.0274 12.3965 14.3162 7.62764 14.3162 3.49229C14.3162 3.35643 14.3132 3.22152 14.3067 3.08709C14.9457 2.64615 15.5001 2.09509 15.9384 1.46728Z" fill="currentColor"></path></svg></a></div>
+                     <div class="css-o8h0bd e1dxhk5s0"><a target="_blank" rel="noreferrer" class="chakra-link css-77pw2k" href="https://discord.gg/jUTxM2zGZQ" aria-label="Discord"><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-lvfkuc"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.289 5.81904C17.9093 5.19395 16.4527 4.7505 14.9565 4.5C14.7518 4.86219 14.5666 5.23482 14.4016 5.61636C12.8078 5.37871 11.1871 5.37871 9.59341 5.61636C9.42833 5.23486 9.24308 4.86223 9.03843 4.5C7.54129 4.75261 6.08378 5.19712 4.70267 5.82231C1.96081 9.83663 1.21754 13.7512 1.58918 17.6103C3.19488 18.7843 4.99211 19.6771 6.90276 20.25C7.33298 19.6774 7.71367 19.0699 8.04079 18.4341C7.41947 18.2044 6.81978 17.9211 6.24868 17.5874C6.39898 17.4795 6.54599 17.3684 6.68803 17.2605C10.0526 18.8263 13.9473 18.8263 17.3119 17.2605C17.4556 17.3766 17.6026 17.4877 17.7512 17.5874C17.179 17.9217 16.5783 18.2055 15.9558 18.4357C16.2826 19.0713 16.6633 19.6782 17.0939 20.25C19.0061 19.6794 20.8048 18.787 22.4107 17.6119C22.8468 13.1367 21.6658 9.25802 19.289 5.81904ZM8.51153 15.237C7.4759 15.237 6.62031 14.307 6.62031 13.1628C6.62031 12.0187 7.44617 11.0805 8.50823 11.0805C9.57028 11.0805 10.4193 12.0187 10.4011 13.1628C10.3829 14.307 9.56698 15.237 8.51153 15.237ZM13.5988 13.1628C13.5988 14.307 14.4511 15.237 15.4884 15.237C16.5438 15.237 17.3581 14.307 17.3763 13.1628C17.3945 12.0187 16.5521 11.0805 15.4884 11.0805C14.4247 11.0805 13.5988 12.0187 13.5988 13.1628Z" fill="currentColor"></path></svg></a></div>
+                     
+                </div>
+
+                </div>
+
+
+
+            </div>
+          
+            
+
+
+           </div>
+      </form>
+
+     <div class="footer" style="color:#bdfff1; text-align:center;">
+        © 2022 GOE all rights reserved <br>  Developed by ravi
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+          </svg>
+     </div>
+
+    </div>
+     
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
