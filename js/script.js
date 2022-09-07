@@ -70,7 +70,7 @@
       
         .then((data) => {
 
-            document.querySelector('#solPrice').innerHTML =Number(data.price).toFixed(2)
+            document.querySelector('#solPrice').innerHTML =Number(data.price).toFixed(3)
 
         })
         //Then with the error genereted...
@@ -87,7 +87,7 @@
       
         .then((data) => {
 
-            document.querySelector('#kiPrice').innerHTML =Number(data.data.price).toFixed(2)
+            document.querySelector('#kiPrice').innerHTML =Number(data.data.price).toFixed(3)
 
         })
         //Then with the error genereted...
@@ -104,7 +104,8 @@
       
         .then((data) => {
 
-            document.querySelector('#genePrice').innerHTML =Number(data.data.tokenInfo.price).toFixed(2)
+          document.querySelector('#genePrice').innerHTML =Number(data.data.tokenInfo.price).toFixed(3)
+
         })
         //Then with the error genereted...
         .catch((error) => {
